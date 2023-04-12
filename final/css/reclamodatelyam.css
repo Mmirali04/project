@@ -1,0 +1,153 @@
+:root {
+    --primary-color-400: #2e9adb;
+    --primary-color-400-shadow: rgba(78, 170, 224, .35);
+    --secondary-color-400: #55b570;
+    --secondary-color-400-shadow: rgba(85, 181, 112, .35);
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --grey-color: rgba(144, 144, 144, 1);
+    --divider-color: #F4F4F4;
+    --thumbler-bg-color: #F9F9F9;
+    --thumbler-border-color: #EBEBEB;
+  
+    --button-shadows: 0 10px 20px 0;
+  
+    --font-800: 3.75rem;
+    --font-700: 2.5rem;
+    --font-600: 1.875rem;
+    --font-500: 1.25rem;
+    --font-400: 1rem;
+    --font-300: .825rem;
+    --font-200: .6875rem;
+    
+    --base-font-size: var(--font-400);
+    --nav-font-size: var(--font-300);
+  
+    --h1-font-size: var(--font-800);
+    --h4-font-size: var(--font-600);
+    --caption-font-size: var(--font-500);
+  
+    
+    --button-font-size: var(--font-500);
+    
+    --font-family: Gilroy, sans-serif;
+    
+    --base-spacing: .5rem;
+  
+    --desktop: 90em;
+    --tablet: 48em;
+    --mobile: 20em;
+  }
+
+/* header */
+
+
+.header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  
+    font-weight: 700;
+  }
+  
+  .header-nav {
+    display: flex;
+  
+    font-size: var(--font-300);
+  }
+  
+  .logo {
+    align-self: center;
+  }
+  
+  .nav-sections {
+    display: flex;
+    gap: 3.125rem;
+    padding: 0 3.125rem;
+  }
+  
+  .nav-sections__link {
+    padding-top: 1.75rem;
+    padding-bottom: 1.9375rem;
+    border-top: 5px solid transparent;
+  }
+  
+  .nav-sections__link_active {
+    border-top-color: var(--secondary-color-400);
+  }
+  
+  .nav-auth {
+    padding: 0 3.125rem;
+    border-left: 1px solid var(--divider-color);
+    border-right: 1px solid var(--divider-color);
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-auth__span {
+    color: var(--secondary-color-400);
+  }
+  
+  .nav-auth__span > a {
+    color: inherit;
+  }
+  
+  .nav-lang {
+    align-self: center;
+    margin-left: 1.875rem;
+  }
+  
+  .thumbler {
+    display: flex;
+    border: 1px solid var(--thumbler-border-color);
+    background-color: var(--thumbler-bg-color);
+  
+    font-size: var(--font-200);
+  
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+  .thumbler__lang {
+    color: var(--grey-color);
+    padding: .46rem .565rem;
+    border-radius: .875rem;
+  }
+  
+  .thumbler__lang_active {
+    background-color: var(--primary-color-400);
+    color: var(--white-color);
+  }
+  
+
+/* hero первая страница */
+
+.hero{
+    background-image: url(/img/reclamodatelyam/reclamo-hero1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    height: 100vh;
+  
+}
+
+.razrabotka-mob{
+    margin-bottom: 300px;
+    width: 1110px;
+    height: 150px;
+    left: 165px;
+    top: 220px;
+
+    font-family: 'Gilroy' sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.mob-razrabotka{
+    margin-left: 13px;
+}
